@@ -19,7 +19,6 @@ function rebuildTable() {
         row.innerHTML = `
             <td>${col1}</td>
             <td>${col2}</td>
-            <td></td>
         `;
         tbody.appendChild(row);
     }

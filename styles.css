@@ -1,60 +1,145 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background: #f0f0f0;
-    padding: 30px;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 30px;
 }
 
 .container {
-    width: 500px;
-    margin: auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
 }
 
-table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
 }
 
 input[type="number"] {
-    width: 90%;
-    padding: 5px;
+  width: 90%;
+  padding: 5px;
 }
 
-#addRowBtn, #calculateBtn {
-    padding: 10px 15px;
-    margin-right: 10px;
-    cursor: pointer;
-    border: none;
-    background: #007bff;
-    color: #fff;
+#addRowBtn,
+#calculateBtn {
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#addRowBtn:hover,
+#calculateBtn:hover {
+  background: #0056b3;
+}
+
+.result_box_area {
+    border: 1px solid #b7daff;
     border-radius: 5px;
-}
-
-#addRowBtn:hover, #calculateBtn:hover {
-    background: #0056b3;
-}
-
-#resultBox {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: normal;
+    padding: 25px;
 }
 
 #resultValue.green {
-    color: green;
+  color: green;
+  font-weight: bold;
 }
 
 #resultValue.red {
-    color: red;
+  color: red;
+  font-weight: bold;
 }
+
+/* Add Row btn area box */
+.add_row_col_btn_area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.all_btn_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch_btn_box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.add_row_col_btn_area>button{
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 7px 11px;
+    border: none;
+    color: #ffffff;
+}
+
+/* iOS style toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #4cd964;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+

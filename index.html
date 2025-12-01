@@ -6,37 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Two Column Calculator</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="container">
         <h2>Two Column Calculator</h2>
-
-        <table id="dataTable">
-            <thead>
-                <tr>
+        <table class="kib_table" id="dataTable">
+            <thead  class="kib_thead">
+                <tr  class="kib_thead_tr">
                     <th>Column 1</th>
                     <th>Column 2</th>
-                    <th>Action</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><input type="number" value="0"></td>
-                    <td><input type="number" value="0"></td>
-                    <td></td>
-                </tr>
-            </tbody>
+            <tbody class="kib_tbody"></tbody>
         </table>
 
-        <button id="addRowBtn">Add Row</button>
-        <button id="calculateBtn">Calculate</button>
+        <div class="add_row_col_btn_area">
+            <button id="addCol1">Add Row to Column 1</button>
+            <button id="addCol2">Add Row to Column 2</button>
+        </div>
 
-        <div id="resultBox">Result: <span id="resultValue">0</span></div>
+        <div class="all_btn_box">
+            <div class="switch_btn_box">
+                <span id="modeLabel">After-Calculate Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="modeToggleCheckbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <button class="calculate_btn" id="calculateBtn">Calculate</button>
+        </div>
+
+
+        <div class="result_box_area" id="resultBox">Result: <span id="resultValue">0</span></div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-

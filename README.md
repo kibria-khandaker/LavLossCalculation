@@ -20,12 +20,13 @@ This is a simple web-based calculator application called **LavLossCalculation**.
 - **JavaScript (JS)**: For handling dynamic row addition, deletion, calculation, real-time updates, and event listeners.
 
 ## File Structure
-
+<pre> 
 project-folder/
 │
 ├── index.html # Main HTML file
 ├── styles.css # Custom CSS styles
 └── script.js # JavaScript functionality
+</pre>
 
 
 ## Usage

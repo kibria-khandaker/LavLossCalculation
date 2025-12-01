@@ -61,6 +61,6 @@ Create option to delete button Row/Column separately. remove space from all colu
 ## Version: V002
 Create option to Add "Row in to Column 1 & Column 2" separation button.
 
-## Version Start: V001
+## Version: V001
 It was a simple option to add a "Row into Column 1 & Column 2" button. When clicked to add, it created entries for both columns, with simple field and calculation options.
 

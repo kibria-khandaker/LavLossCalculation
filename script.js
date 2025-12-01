@@ -32,16 +32,16 @@ for (let i = 0; i < maxLen; i++) {
     const row = document.createElement('tr');
 
     const col1 = col1Values[i] !== undefined
-    ? `<input type="number" class="col1 kib_col_input_field" data-index="${i}" value="${col1Values[i]}">
-    <button class="del1 kib_col_delete_btn" data-index="${i}">X</button>`
+    ? `<div class="data_input_field"><input type="number" class="col1" data-index="${i}" value="${col1Values[i]}">
+    <button class="del1 kib_col_delete_btn" data-index="${i}">X</button></div>`
     : '';
 
     const col2 = col2Values[i] !== undefined
-    ? `<input type="number" class="col2 kib_col_input_field" data-index="${i}" value="${col2Values[i]}">
-    <button class="del2 kib_col_delete_btn" data-index="${i}">X</button>`
+    ? `<div class="data_input_field"><input type="number" class="col2" data-index="${i}" value="${col2Values[i]}">
+    <button class="del2 kib_col_delete_btn" data-index="${i}">X</button></div>`
     : '';
     
-    row.innerHTML = `<td class="kib_col_cell">${col1}</td><td class="kib_col_cell">${col2}</td>`;
+    row.innerHTML = `<td class="kib_col1_cell">${col1}</td><td class="kib_col2_cell">${col2}</td>`;
     
     row.classList.add('kib_data-row');
 

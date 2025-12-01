@@ -32,7 +32,7 @@ project-folder/
 ## Usage
 
 1. Open `index.html` in a web browser.
-2. Use "Add Row to Column 1" or "Add Row to Column 2" buttons to add rows.
+2. Use "Add More Positive Value : Column 1" or "Add More Nagative Value: Column 2" buttons to add rows.
 3. Enter numeric values in the input fields.
 4. Switch between Real-Time Mode or After-Calculate Mode using the toggle switch.
 5. In After-Calculate Mode, click the "Calculate" button to see the result and row colors.
@@ -53,7 +53,7 @@ project-folder/
 # Version History
 
 ## Version: V004
-Update Everything and 
+Update CSS, Function and Everything.
 
 ## Version: V003
 Create option to delete button Row/Column separately. remove space from all column when create row in to column. 
